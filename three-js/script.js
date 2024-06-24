@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mobileMenu.classList.remove("flex");
   });
 
-  // Close mobile menu when clicking outside
   mobileMenu.addEventListener("click", (e) => {
     if (e.target === mobileMenu) {
       mobileMenu.classList.add("hidden");
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  // Handle window resize
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 768) {
       mobileMenu.classList.add("hidden");
